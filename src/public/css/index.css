@@ -114,3 +114,13 @@
     padding: 0px 3px;
 }
 
+.pagination {
+    display: flex;
+    justify-content: right;
+    margin-right: 35%;
+}
+
+svg.w-5.h-5 {
+    width: 30px;
+    height: 30px;
+}

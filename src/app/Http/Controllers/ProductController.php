@@ -10,7 +10,7 @@ use App\Models\Season;
 class ProductController extends Controller
 {
     public function showIndex() {
-        $products = Product::all();
+        $products = Product::Paginate(6);
         return view('index', compact('products'));
     }
 
