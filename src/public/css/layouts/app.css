@@ -1,0 +1,14 @@
+.title {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.title-name {
+    color: #F4C61B;
+    font-size: 25px;
+    font-family: 'Didot',sans-serif;
+}
+
+main {
+    background-color: #f8f8f8;
+}
