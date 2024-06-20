@@ -27,10 +27,11 @@
                 <div class="product-season">
                     <!-- 既存のデータをチェックボックスに表示しておきたい -->
                     <p class="season-title">季節</p>
-                    <input type="checkbox" class="season-box" name="season" value="spring">春
-                    <input type="checkbox" class="season-box" name="season" value="summer">夏
-                    <input type="checkbox" class="season-box" name="season" value="autumn">秋
-                    <input type="checkbox" class="season-box" name="season" value="winter">冬
+                    @foreach(['春','夏','秋','冬'] as $key => $seasonName)
+                    <label>
+                        <input type="checkbox" class="season-box" name="seasons[]" value="{{ $key }}" {{ $seasons->contains('season_id', $key + 1) ? 'checked=="checked' : '' }}>{{ $seasonName }}
+                    </label>
+                    @endforeach
                 </div>
             </div>
         </div>

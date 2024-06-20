@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product_season extends Model
 {
+
+    protected $table = 'product_season';
     use HasFactory;
 
     protected $fillable = [
