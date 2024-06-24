@@ -21,6 +21,7 @@
 ・ MySQL 8.0.26
 
 ## ER図
+<img width="521" alt="スクリーンショット 2024-06-25 8 56 48" src="https://github.com/sasakiminaho/check-test02/assets/139112373/1f6cbb01-6191-46d7-b738-81fb3a47aa54">
 
 
 ## URL
