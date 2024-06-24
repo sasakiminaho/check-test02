@@ -17,5 +17,23 @@
             @yield('content')
         </body>
     </main>
+    <script>
+        'use strict';
+    const image = document.getElementById('image');
+    image.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+
+        const fileReader = new FileReader();
+        fileReader.readAsDataURL(file);
+
+        fileReader.addEventListener('load', (e) => {
+            const imgElm = document.createElement('img');
+            imgElm.src = e.target.result;
+
+            const targetElm = document.getElementById('preview');
+            targetElm.appendChild(imgElm);
+        });
+    });
+    </script>
 </body>
 </html>

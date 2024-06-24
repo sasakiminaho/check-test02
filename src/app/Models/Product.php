@@ -16,7 +16,12 @@ class Product extends Model
         'description'
     ];
 
+
+    public function seasons() {
+        return $this->belongsToMany('App\Models\Season')->withPivot('name');
+    }
+
     public function product_season() {
-        return $this->hasMany('App\Model\Product_season');
+        return $this->hasMany('App\Models\Product_season');
     }
 }

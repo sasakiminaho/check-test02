@@ -13,7 +13,11 @@ class Season extends Model
         'name'
     ];
 
+    public function products() {
+        return $this->belongsToMany('App\Models\Product');
+    }
+
     public function product_season() {
-        return $this->hasMany('App\Model\Product_season');
+        return $this->hasMany('App\Models\Product_season');
     }
 }
